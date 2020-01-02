@@ -459,7 +459,8 @@ public class NumberUtils {
         int pfxLen = 0;
         for(final String pfx : hex_prefixes) {
             if (str.startsWith(pfx)) {
-                pfxLen += pfx.length();
+                //pfxLen += pfx.length();
+                pfxLen = pfx.length();
                 break;
             }
         }
